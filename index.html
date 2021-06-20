@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Signup Form</title>
+<link rel="stylesheet"
+href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity=
+"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">			
+<link rel="stylesheet" type="text/css" href="style.css">		
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<div class="container" >
+		<div class="row">
+		<div class="col-md-3">
+					
+		</div>
+				
+		<div class="col-md-6 main">
+					
+			<form action="/sign_up" method="post">
+					<p style="margin-left: 300px">Already have an account?
+						<a href="login.html">Login</a></p>
+			<h1> Signup form </h1>
+							
+			<input class="box" type="text" name="name" id="name"
+			placeholder="Name" required /><br>
+			<input class="box" type="number" name="_id" id="username"
+			placeholder="Employee id" required /><br>
+			<input class="box" type="email" name="email" id="email"
+			placeholder="E-Mail " required /><br>
+							
+			<input class="box" type="password" name="password"
+			id="password" placeholder="Password " required/><br>
+			<input class="box" type="password" name="confirmpassword"
+			id="confirmpassword" placeholder="Confirm Password " required/><br>
+			<input class="box" type="number" name="phone" id="phone"
+			placeholder="Phone Number " required/><br>
+				<br>
+				<input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label>  
+				<br>
+				<br>
+					<input type="checkbox" name="terms" id="terms" required>  I Agree Terms & Coditions
+				   <br><br>
+				<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>			
+			<br>
+					
+			<input type="submit" id="submitDetails"
+			name="submitDetails" value="Submit" /><br>
+					
+			</form>
+					
+		</div>
+				
+				
+		<div class="col-md-3">
+		</div>
+				
+	</div>
+	</div>
+</body>
+</html>	
